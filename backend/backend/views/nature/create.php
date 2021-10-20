@@ -1,0 +1,19 @@
+<?php
+
+use yii\helpers\Html;
+
+$this->title = 'เพิ่มข้อมูล';
+$this->params['breadcrumbs'][] = ['label' => 'สถานที่ธรรมชาติ', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+?>
+
+<div class="panel panel-default" style="margin-top: 20px;">
+
+    <div class="panel-body">
+        <?= $this->render('_form', [
+            'model' => $model,
+            'community' => $community,
+        ]) ?>
+    </div>
+
+</div>
